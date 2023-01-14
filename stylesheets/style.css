@@ -8,16 +8,18 @@
   --dark-02-color: #424242;
   --dark-03-color: #727272;
   --white-color: #fff;
+  --footer-background: #FFF4E7;
 }
 
 body {
   margin: 0 auto;
   font-family: "Work Sans", sans-serif;
+  position: relative;
 }
 
 /* Style for Header Group */
 header {
-  background: rgba(255, 144, 14, 0.1);
+  background: #ff900e1a;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,7 +29,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 1440px;
 }
 h2.site-title {
   color: var(--dark-01-color);
@@ -137,7 +139,7 @@ h1.banner-heading {
 }
 /* Highted Feature Style */
 .top-features {
-    margin-top: 130px;
+  margin-top: 130px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,8 +161,8 @@ h1.banner-heading {
   line-height: 26px;
   color: var(--dark-03-color);
 }
-.list{
-    padding: 30px;
+.list {
+  padding: 30px;
 }
 .list h3 {
   font-weight: 600;
@@ -171,13 +173,112 @@ h1.banner-heading {
   height: 23px;
   margin: 0;
 }
-.list p{
-    width: 514px;
-height: 78px;
-font-weight: 400;
-font-size: 16px;
-line-height: 26px;
-color: var(--dark-03-color);
-margin-top: 0;
-padding-top: 10px;
+.list p {
+  width: 514px;
+  height: 78px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--dark-03-color);
+  margin-top: 0;
+  padding-top: 10px;
+}
+/* Some facts with a widget styles */
+.some-facts {
+  margin-top: 130px;
+  position: relative;
+}
+.facts-text {
+    position:relative;
+    width: 1400px;
+    border:1px solid
+     #131313;
+
+}
+.facts-title {
+  width: 258px;
+  height: 53px;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  color: var(--dark-01-color);
+
+}
+.facts-summary {
+  width: 542px;
+  height: 52px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 24px;
+  margin-bottom: 100px;
+}
+.facts-widget {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 125px;
+}
+.fact-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  width: 242px;
+  height: 242px;
+}
+/* Sponsors section and their logos - Style */
+.sponsor {
+  margin: 0;
+  margin-top: 180px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.sponsor-title {
+  width: 327px;
+  height: 53px;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  color: var(--dark-01-color);
+  margin: 0;
+}
+.sponsor-summary {
+  margin: 24px;
+  width: 542px;
+  height: 52px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--dark-03-color);
+}
+.sponsor-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 155px;
+}
+.sponsor-logo img {
+  width: 165px;
+  height: 50px;
+}
+/* footer stlye */
+footer {
+    width: 1440px;
+    height: 100px;
+    background-color: var(--footer-background);
+    display: block;
+    margin-top: 130px;
+    margin-bottom: 216px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+footer > p {
+    padding: 39px;
 }

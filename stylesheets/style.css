@@ -8,7 +8,7 @@
   --dark-02-color: #424242;
   --dark-03-color: #727272;
   --white-color: #fff;
-  --footer-background: #FFF4E7;
+  --footer-background: #fff4e7;
 }
 
 body {
@@ -143,6 +143,7 @@ h1.banner-heading {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 54px;
 }
 .highligh-feature-title {
   font-weight: 700;
@@ -163,6 +164,9 @@ h1.banner-heading {
 }
 .list {
   padding: 30px;
+  background: #ffffff;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
 }
 .list h3 {
   font-weight: 600;
@@ -183,17 +187,61 @@ h1.banner-heading {
   margin-top: 0;
   padding-top: 10px;
 }
+/* 10 years + experience box overlay */
+.img-container {
+  position: relative;
+  width: 800px;
+  height: 1059px;
+}
+.img-container > img {
+  width: 708px;
+  height: 982px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.tenyr-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  width: 342px;
+  height: 200px;
+  color: var(--white-color);
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 2px;
+  justify-items: center;
+  align-items: center;
+  margin: 0;
+}
+.tenyr-box > h1 {
+  margin: 0%;
+  padding: 0;
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 70px;
+}
+.tenyr-box > p {
+  margin: 0%;
+  padding-top: -20%;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 40px;
+}
+
 /* Some facts with a widget styles */
 .some-facts {
   margin-top: 130px;
   position: relative;
 }
 .facts-text {
-    position:relative;
-    width: 1400px;
-    border:1px solid
-     #131313;
-
+  position: relative;
+  width: 1400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .facts-title {
   width: 258px;
@@ -202,7 +250,6 @@ h1.banner-heading {
   font-size: 45px;
   line-height: 53px;
   color: var(--dark-01-color);
-
 }
 .facts-summary {
   width: 542px;
@@ -220,15 +267,31 @@ h1.banner-heading {
   gap: 125px;
 }
 .fact-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: auto;
+  align-content: center;
+  justify-items: center;
   align-items: center;
-  margin: 0;
   border: 1px solid var(--primary-color);
   border-radius: 8px;
   width: 242px;
   height: 242px;
+  font-weight: 600;
+}
+
+h2.num {
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 45px;
+  line-height: 53px;
+  color: var(--dark-02-color);
+}
+p.term {
+  margin: 0;
+  font-size: 20px;
+  line-height: 23px;
+  color: var(--dark-03-color);
 }
 /* Sponsors section and their logos - Style */
 .sponsor {
@@ -248,7 +311,7 @@ h1.banner-heading {
   color: var(--dark-01-color);
   margin: 0;
 }
-.sponsor-summary {
+.sponsor-summary, .subscribe-summary {
   margin: 24px;
   width: 542px;
   height: 52px;
@@ -266,19 +329,48 @@ h1.banner-heading {
 .sponsor-logo img {
   width: 165px;
   height: 50px;
+  filter: grayscale(100%);
 }
+/* New - Subscribe Styles */
+.subscribe {
+    margin: 0;
+    margin-top: 180px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  .subscribe i {
+    font-size: 78px;
+    color: var(--primary-color);
+  }
+  .subscribe input{
+    width: 380px;
+    height: 64px;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+  }
+  .subscribe-title {
+    height: 53px;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: var(--dark-01-color);
+    margin: 0;
+  }
 /* footer stlye */
 footer {
-    width: 1440px;
-    height: 100px;
-    background-color: var(--footer-background);
-    display: block;
-    margin-top: 130px;
-    margin-bottom: 216px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+  width: 1440px;
+  height: 100px;
+  background-color: var(--footer-background);
+  display: block;
+  margin-top: 130px;
+  margin-bottom: 216px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 footer > p {
-    padding: 39px;
+  padding: 39px;
 }

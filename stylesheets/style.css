@@ -277,6 +277,11 @@ h1.banner-heading {
   width: 242px;
   height: 242px;
   font-weight: 600;
+  transition: border-radius 2s, transform 2s;
+}
+.fact-box:hover {
+    transform: rotate(10deg);
+    border-radius: 50%;
 }
 
 h2.num {
@@ -475,35 +480,23 @@ footer > p {
   }
   /* 10 years + experience box overlay */
   .img-container {
+    display: none;
+  }
+  .mb-container {
     position: relative;
-    width: 395px;
-    text-align: center;
-    margin: 0;
-  }
-  .img-container > img {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: center;
     width: 350px;
-    height: auto;
   }
-  .tenyr-box {
-    width: 340px;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 2px;
+  .mb-ten {
+    position: absolute;
+    bottom: 10%;
+    left: 0%;
   }
-  .tenyr-box > h1 {
-    margin: 0%;
-    padding: 0;
-    font-weight: 700;
-    font-size: 65px;
-    line-height: 70px;
-  }
-  .tenyr-box > p {
-    margin: 0%;
-    padding-top: -20%;
-    font-weight: 500;
-    font-size: 25px;
-    line-height: 40px;
-  }
+
+
   /* Some facts with a widget styles */
   .some-facts {
     margin-top: 30px;
@@ -568,8 +561,4 @@ footer > p {
     margin-top: 30px;
     margin-bottom: 60px;
   }
-  footer > p {
-    padding: 39px;
-  }
-
 }

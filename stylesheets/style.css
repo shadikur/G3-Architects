@@ -311,7 +311,8 @@ p.term {
   color: var(--dark-01-color);
   margin: 0;
 }
-.sponsor-summary, .subscribe-summary {
+.sponsor-summary,
+.subscribe-summary {
   margin: 24px;
   width: 542px;
   height: 52px;
@@ -333,32 +334,32 @@ p.term {
 }
 /* New - Subscribe Styles */
 .subscribe {
-    margin: 0;
-    margin-top: 180px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-  }
-  .subscribe i {
-    font-size: 78px;
-    color: var(--primary-color);
-  }
-  .subscribe input{
-    width: 380px;
-    height: 64px;
-    border: 1px solid var(--primary-color);
-    border-radius: 8px;
-  }
-  .subscribe-title {
-    height: 53px;
-    font-weight: 700;
-    font-size: 45px;
-    line-height: 53px;
-    color: var(--dark-01-color);
-    margin: 0;
-  }
+  margin: 0;
+  margin-top: 180px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+.subscribe i {
+  font-size: 78px;
+  color: var(--primary-color);
+}
+.subscribe input {
+  width: 380px;
+  height: 64px;
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+}
+.subscribe-title {
+  height: 53px;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  color: var(--dark-01-color);
+  margin: 0;
+}
 /* footer stlye */
 footer {
   width: 1440px;
@@ -373,4 +374,160 @@ footer {
 }
 footer > p {
   padding: 39px;
+}
+/* Responsive Styles for Mobile Devices */
+@media screen and (max-width: 576px) {
+  nav {
+    flex-direction: column;
+    width: 100%;
+  }
+  .menu-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  h1.banner-heading {
+    margin-top: 60px;
+    width: 100%;
+    font-size: 38px;
+    line-height: 40px;
+  }
+  .banner-summary {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 10px;
+    width: 350px;
+  }
+  h2.site-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 10px;
+  }
+  .banner img {
+    border-radius: 8px;
+    margin-top: 52px;
+    margin-bottom: 45px;
+    width: 350px;
+    height: auto;
+  }
+  /* Quick Feature section style */
+  .features {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .team-images {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+  }
+  .feature-title {
+    font-size: 30px;
+    width: 90%;
+    margin-left: 10px;
+  }
+  .feature-summary {
+    width: 90%;
+    margin-left: 10px;
+    margin-bottom: 30px;
+  }
+  .mb-button {
+    margin-left: 10px;
+  }
+  /* Highted Feature Style */
+  .top-features {
+    margin-top: 30px;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .highligh-feature-title {
+    font-size: 30px;
+    width: 350px;
+    border-left: 5px solid var(--primary-color);
+    padding-left: 15px;
+  }
+  .highlight-feature-summary {
+    width: 350px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+  }
+  .list {
+    padding: 10px;
+  }
+  .list h3 {
+    width: 252px;
+    height: 23px;
+    margin: 0;
+  }
+  .list p {
+    width: 95%;
+    height: 78px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--dark-03-color);
+    margin-top: 0;
+    padding-top: 10px;
+  }
+  /* 10 years + experience box overlay */
+  .img-container {
+    position: relative;
+    width: 395px;
+    text-align: center;
+    margin: 0;
+  }
+  .img-container > img {
+    width: 350px;
+    height: auto;
+  }
+  .tenyr-box {
+    width: 340px;
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2px;
+    justify-items: center;
+    align-items: center;
+    margin: 0;
+  }
+  .tenyr-box > h1 {
+    margin: 0%;
+    padding: 0;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 70px;
+  }
+  .tenyr-box > p {
+    margin: 0%;
+    padding-top: -20%;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 40px;
+  }
+  /* Some facts with a widget styles */
+  .some-facts {
+    margin-top: 30px;
+  }
+  .facts-text {
+    width: 350px;
+  }
+  .facts-title {
+    font-size: 30px;
+  }
+  .facts-summary {
+    width: 350px;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 70px;
+  }
+  .facts-widget {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
 }
